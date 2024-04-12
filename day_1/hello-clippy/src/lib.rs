@@ -21,7 +21,7 @@ pub fn floats_are_similar(a: f32, b: f32) -> bool {
 }
 
 pub fn decrement(x: i32) -> i32 {
-    x-1
+    x - 1
 }
 
 pub fn read_int_from_str(s: &str) -> i32 {
