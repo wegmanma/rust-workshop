@@ -11,9 +11,7 @@ pub fn badly_formatted() {
 }
 
 pub fn clippy_doesnt_like_this() {
-    if i32::MAX < i32::MIN {
-        println!("This is ridiculous.");
-    }
+    println!("This is ridiculous.");
 }
 
 pub fn dangerous_cast(n: i64) -> i32 {
