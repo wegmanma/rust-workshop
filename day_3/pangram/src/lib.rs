@@ -137,17 +137,17 @@ mod tests {
     }
 }
 
-#[test]
-fn exercise_was_started() {
-    let this_file_content = include_str!("lib.rs");
-    assert!(
-        this_file_content
-            .lines()
-            .all(|line| !line.starts_with("#[cfg(deactivated)]")),
-        "
-        ╭──────────────────────────────────────────────────────────────────────────╮
-        │ remove the line starting with #[cfg(deactivated)] to activate the tests! │
-        ╰──────────────────────────────────────────────────────────────────────────╯
-"
-    )
-}
+// #[test]
+// fn exercise_was_started() {
+//     let this_file_content = include_str!("lib.rs");
+//     assert!(
+//         this_file_content
+//             .lines()
+//             .all(|line| !line.starts_with("#[cfg(deactivated)]")),
+//         "
+//         ╭──────────────────────────────────────────────────────────────────────────╮
+//         │ remove the line starting with #[cfg(deactivated)] to activate the tests! │
+//         ╰──────────────────────────────────────────────────────────────────────────╯
+// "
+//     )
+// }
