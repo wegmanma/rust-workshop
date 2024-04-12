@@ -2,8 +2,3 @@
 resolver = "2"
 members = ["day_?/*", "final_project/paekli-cli"]
 
-[lints.rust]
-missing_docs = "deny"
-
-[lints.clippy]
-cast_possible_truncation = "deny"
