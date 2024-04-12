@@ -17,7 +17,7 @@ pub fn clippy_doesnt_like_this() {
 }
 
 /// This function is not safe.
-pub fn dangerous_cast(n: i64) -> Result<i32, std::num::TryFromIntError>{
+pub fn dangerous_cast(n: i64) -> Result<i32, std::num::TryFromIntError> {
     // In my opinion, the `as` keyword should be used sparingly.
     // This conversion is lossy and may not do what you expect.
     // It is better to replace it with `.try_into()` and return
@@ -25,7 +25,6 @@ pub fn dangerous_cast(n: i64) -> Result<i32, std::num::TryFromIntError>{
     //
     // But as always, let's get CI to complain about it before we fix it.
     n.try_into()
-
 }
 /// This function is not efficient.
 pub fn add(left: usize, right: usize) -> usize {
